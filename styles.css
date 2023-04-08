@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Orbitron:regular,500,600,700,800,900);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.big-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 25px;
+    font-family: Orbitron;
+    font-size: 15px;
+    flex: 3;
+}
+
+.bg-image {
+    margin: 0;
+    padding: 0;
+    flex: 2;
+}
+
+img {
+    height: 100vh;
+    width: calc((2 / 5) * 100)vw;
+}
+
+input,
+textarea,
+select,
+button {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+    height: 33px;
+    background-color: rgb(13, 82, 4);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+button:hover {
+    border: 3px solid black;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.container {
+    display: flex;
+    height: 225px;
+    width: 365px;
+    flex-wrap: wrap;
+}
