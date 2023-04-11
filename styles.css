@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+:root {
+    --imgwidth: calc((2 / 5) * 100)vw;
+}
+
 body {
     height: 100vh;
     width: 100vw;
@@ -12,10 +16,8 @@ body {
 }
 
 .big-container {
-    height: 100vh;
-    width: 100vw;
     display: flex;
-    margin-top: 50px;
+    margin-top: 75px;
     flex-direction: column;
     gap: 25px;
     font-family: Orbitron;
@@ -24,14 +26,45 @@ body {
 }
 
 .bg-image {
+    background-image: url('images/Luis-Del-Rio');
+    background-repeat: no-repeat;
+    background-size: auto 100vh;
+    position: relative;
     margin: 0;
     padding: 0;
     flex: 2;
 }
 
+.text-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(25, 97, 28, 0.5);
+    border: none;
+    margin: 0;
+    margin-top: 100px;
+    padding: 0;
+}
+
+#text {
+    font-family: Orbitron;
+    font-size: 25px;
+    color: black;
+}
+
+#logo {
+    height: 100px;
+    width: auto;
+}
+
 img {
     height: 100vh;
-    width: calc((2 / 5) * 100)vw;
+    width: var(--imgwidth);
+}
+
+input:focus {
+    box-shadow: 3px 3px 3px black;
 }
 
 input,
@@ -50,6 +83,7 @@ button {
     border: none;
     border-radius: 5px;
     color: white;
+    font-family: Orbitron;
 }
 
 button:hover {
