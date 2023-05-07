@@ -26,7 +26,7 @@ body {
 }
 
 .bg-image {
-    background-image: url('images/Luis-Del-Rio');
+    background-image: url(images/Luis-Del-Rio.png);
     background-repeat: no-repeat;
     background-size: auto 100vh;
     position: relative;
